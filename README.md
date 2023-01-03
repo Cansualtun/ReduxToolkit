@@ -1,7 +1,8 @@
-# ReduxToolkit Documentation 
+# Basics of Redux Toolkit
 
-This documentation is about mastering Redux Toolkit. You can check out these topics below to see what you could capable of mastering on this subject.
+First of all, before entering the world of redux toolkit, I will talk about 
+the **Redux** structure that you have probably heard before.
 
-## List of Topics
+Redux is a JavaScript library for managing application state. 
+It is most commonly used with React, but can be used with other JavaScript frameworks as well.
 
-1. Basics of Redux Toolkit
