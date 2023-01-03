@@ -1,5 +1,11 @@
 # Basics of Redux Toolkit
 
+## Prerequisites
+
+
+- React Basics
+- React Hooks
+
 First of all, before entering the world of redux toolkit, I will talk about 
 the **Redux** structure that you have probably heard before.
 
@@ -18,7 +24,7 @@ Just because of this management difficulty, we use libraries such as redux and r
 *Redux* is a popular JavaScript library for managing state in applications. 
 It provides a predictable, single source of truth for application state, making it easier to understand and debug complex applications.
 
-*Redux Toolkit* is a official, opinionated, batteries-included toolset for efficient Redux development. 
+*[Redux Toolkit]*(https://redux-toolkit.js.org/) is a official, opinionated, batteries-included toolset for efficient Redux development. 
 It is designed to help you write performant, correct Redux code faster and with fewer errors.
 
 Redux Toolkit is intended to be the standard way to write Redux logic, and includes a number of helpful utilities that make it easier to write performant, correct code without having to worry about the underlying implementation details of Redux. If you're just getting started with Redux, you may want to start with Redux Toolkit, as it can make it easier to get up and running quickly.
