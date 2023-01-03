@@ -1,10 +1,7 @@
 # Basics of Redux Toolkit
 
 ## Prerequisites
-
-
-- React Basics
-- React Hooks
+Knowing *React* and *React Hooks* will be helpful for this documentation.
 
 First of all, before entering the world of redux toolkit, I will talk about 
 the **Redux** structure that you have probably heard before.
