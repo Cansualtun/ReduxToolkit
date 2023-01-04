@@ -9,7 +9,7 @@ the **Redux** structure that you have probably heard before.
 Redux is a JavaScript library for managing application **state**. 
 It is most commonly used with React, but can be used with other JavaScript frameworks as well.
 
-Let's go from the general to the specific, then what exactly does **state management** mean?
+## Let's go from the general to the specific, then what exactly does **state management** mean? 
 
 State is actually the properties and information that the components in our application have "at the moment".
 State management provides the management and organization of each of these states.
