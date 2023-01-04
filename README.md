@@ -1,45 +1,42 @@
-# Basics of Redux Toolkit
+# Redux Concepts
 
-## Prerequisites
-Knowing *React* and *React Hooks* will be helpful for this documentation. <br/>
+Before starting to learn redux toolkit, understanding the basics of redux library will enable us to better understand the principle of redux toolkit.
 
-First of all, before entering the world of redux toolkit, I will talk about 
-the **Redux** structure that you have probably heard before.
+### Store 
 
-Redux is a JavaScript library for managing application **state**. 
-It is most commonly used with React, but can be used with other JavaScript frameworks as well.
+A central place where application state is stored. In Redux, there is a **single store** for the entire application, and the store is the single source of truth for the state of the application.
 
-## Let's go from the general to the specific, then what exactly does **state management** mean? 
+### Action 
 
-State is actually the properties and information that the components in our application have "at the moment".
-State management provides the management and organization of each of these states.
-The more components inside the application, the more difficult it becomes to manage these states.
-Just because of this management difficulty, we use libraries such as redux and redux toolkit.
+An object that describes an event that has occurred in the application. 
+Actions are the only way to modify the state of the store.
+Actions carry some information from your app to the redux store.
 
-### What is the differences between Redux and Redux Toolkit?
+### Reducers
 
-*Redux* is a popular JavaScript library for managing state in applications. 
-It provides a predictable, single source of truth for application state, making it easier to understand and debug complex applications.
+A function that takes in the current state of the store and an action, and returns a **new state**. 
+Reducers are responsible for modifying the state of the store based on the actions that are dispatched.
 
-*[Redux Toolkit]*(https://redux-toolkit.js.org/) is a official, opinionated, batteries-included toolset for efficient Redux development. 
-It is designed to help you write performant, correct Redux code faster and with fewer errors.
+Reducers are usually written as:
 
-Redux Toolkit is intended to be the standard way to write Redux logic, and includes a number of helpful utilities that make it easier to write performant, correct code without having to worry about the underlying implementation details of Redux. If you're just getting started with Redux, you may want to start with Redux Toolkit, as it can make it easier to get up and running quickly.
+```
+function reducer(state, action) {
+  switch (action.type) {
+    case 'ACTION_TYPE':
+      // modify state based on action
+      return newState;
+    default:
+      return state;
+  }
+}
 
-### Why should we prefer Redux Toolkit?
+```
 
-- Configuring redux in app seems complicated
+### Dispatch 
 
-- It reduces the amount [boilerplate](https://stackoverflow.com/questions/3992199/what-is-boilerplate-code) code 
+A function that sends an action to the store, triggering a state change.
 
-- It makes it easier to test your Redux logic, as it includes a number of utilities that make it easier to mock store state and   dispatch actions in your tests.
+### Middleware 
 
-### When should I use redux toolkit?
-
-- You want to make it easier to test your Redux logic, and want a set of utilities that make it easier to mock store state and dispatch actions in your tests.
-
-- You want a set of utilities for working with async logic and middleware in your Redux store.
-
-- The logic to update that state may be complex
-
-- The app has a medium or large size codebase, and might be worked on by many people
+Functions that can be used to intercept and modify actions as they are dispatched to the store. 
+**Middleware**  can be used to perform async operations, log actions, or perform other side effects.
